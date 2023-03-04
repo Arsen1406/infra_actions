@@ -23,7 +23,8 @@ jobs:
     - name: Test with flake8 and django tests
       run: |
         python -m flake8
-        [flake8]
+
+      on: [flake8]
         ignore =
             W503,
             F811
