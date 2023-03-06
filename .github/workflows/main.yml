@@ -44,7 +44,7 @@ jobs:
           uses: docker/build-push-action@v2
           with:
             push: true
-            tags: Arsen1406/arsen1406:latest
+            tags: arsen1406/arsen1406:latest
 
 
   deploy:
