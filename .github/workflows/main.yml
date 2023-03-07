@@ -54,10 +54,10 @@ jobs:
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
-          key: ${{ secrets.SSH_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
+          host: 158.160.21.116
+          username: arsen1406
+          key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCyEDjwTDlEws9jyTJTFcZs86JT53/XUjuV7fRLGN5lIFUBjHut3LU4/t6lMjzyWJOp70HiC/TheNbBSevynD6m4IsdhLKdrXxsbK/0Llpfy7hXc8ZhOxJY4KTiBFGLFXjxZCccd/pk/5VCsdod1JkVuv4A9ZD9N9+S69Bk9MIjiJGUEos/5gS34ZzoOw2PTYbLUlk4+B6WdPPnqjaWRre34vnzgUE/WcOIlvJGwuy7XIH61UZa2sXXJ3b1IRnLs7AzfyLTBMUmImXX4rrBZsLzVvVAJYxq5lvOw0COg7Askx9YxP9ypunHs2oAVmDHCIcHtGN/+MKElcGM/cjh7okEWuKCI72fMBwNRSGExxWSsfhpdFkdnyMl3pXR5Blb2FdDgKowdIACI5twEeeIXgmWfhWSRUBUeRnM04iJn5RCn8QJDe2R2DwEp7siwrNLwgcwDah+JXVcnzUyXOERVPx8QqenJhN7uberDhFQ64zsRZLlmCUFESMlWbloeczu5xc= arsen@Arsen
+          passphrase: Arsengrigendr1406
           script: |
             sudo docker pull arsen1406/infra
             sudo docker stop
