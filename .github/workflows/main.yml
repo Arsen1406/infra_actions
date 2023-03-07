@@ -56,7 +56,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
-          key: ${{ secrets.SSH_KEY_YP }}
+          key: ${{ secrets.SSH_KEY }}
           script: |
             sudo docker pull arsen1406/infra
             sudo docker stop
